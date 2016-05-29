@@ -1,0 +1,45 @@
+:local(.overlay){
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 9999998;
+}
+
+:local(.border) {
+  position: absolute;
+  border: 1px solid black;
+  pointer-events: none;
+  z-index: 9999999;
+  transition: all .2s;
+  display: none;
+}
+
+:local(.button_container){
+  position: absolute;
+  z-index: 9999999;
+  display: none;
+}
+
+:local(.select){
+  border-color: red;
+}
+
+:local(.apply){
+  border-color: green;
+}
+
+:local(.panel){
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #c3c3c3;
+  z-index: 10000000;
+}
+
+:local(.visible) {
+  display: block;
+}
